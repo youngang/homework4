@@ -41,10 +41,6 @@ nav a:hover, nav a:focus{
   text-decoration: underline;
 }
 
-head{
-  text-align: center;
-}
-
 
 .skip a{
   background: white;
@@ -125,38 +121,38 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  grid-column: 2 /span - 1;
+  grid-column: 2 /span 1;
 
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
 }
 
 .about, .about-image{
    /*Your Code Here*/
-   grid-row: 2 / auto;
+   grid-row: 2 / span 1;
 
 }
 
 .method, .method-image{
    /*Your Code Here*/
-   grid-row: 3 / auto;
+   grid-row: 3 / span 1;
 }
 
 
 .clients, .clients-image{
     /*Your Code Here*/
-    grid-row: 4 / auto;
+    grid-row: 4 / span 1;
 }
 
 
 .contact, .contact-image{
     /*Your Code Here*/
-    grid-row: 5 / auto;
+    grid-row: 5 / span 1;
 }
 
 .text-block{
