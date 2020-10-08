@@ -41,6 +41,10 @@ nav a:hover, nav a:focus{
   text-decoration: underline;
 }
 
+head{
+  text-align: center;
+}
+
 
 .skip a{
   background: white;
@@ -63,9 +67,13 @@ nav a:hover, nav a:focus{
 
 /*Your Code Here*/
 /*Write selector/rule property to style all elements when in focus*/
-.about-image, .clients-image, .contact-image, .method-image{
+/* .about-image, .clients-image, .contact-image, .method-image{
   padding-top: 2px;
+} */
+*:focus{
+  border: 2px solid #000000;
 }
+
 
 
 nav{
@@ -87,7 +95,7 @@ footer{
 
 .container{
   display: grid;
-  grid-row: 15px;
+  grid-row-gap: 15px;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto auto;
 }
@@ -130,25 +138,25 @@ header p{
 
 .about, .about-image{
    /*Your Code Here*/
-   grid-row: 2 /auto;
+   grid-row: 2 / auto;
 
 }
 
 .method, .method-image{
    /*Your Code Here*/
-   grid-row: 3 /auto;
+   grid-row: 3 / auto;
 }
 
 
 .clients, .clients-image{
     /*Your Code Here*/
-    grid-row: 4 /auto;
+    grid-row: 4 / auto;
 }
 
 
 .contact, .contact-image{
     /*Your Code Here*/
-    grid-row: 5 /auto;
+    grid-row: 5 / auto;
 }
 
 .text-block{
